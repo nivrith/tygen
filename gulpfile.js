@@ -15,6 +15,6 @@ var
 
 gulp.task('copy:templates', () => {
   return gulp
-  .src('./src/templates/**')
+  .src('./src/templates/**', { dot: true })
   .pipe(gulp.dest('./lib/templates/'));
 });
