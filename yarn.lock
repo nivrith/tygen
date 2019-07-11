@@ -276,13 +276,6 @@
     "@types/through" "*"
     rxjs "^6.4.0"
 
-"@types/is-scoped@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@types/is-scoped/-/is-scoped-1.0.1.tgz#9584cf684f28642c3e121614750ce1ba02fbc3bd"
-  integrity sha512-M2swHyBITQtsGArpBynv15TI1beVGR4hd5sSu48AgLg1zLZIN84eCJq/PuY+sCjQ1/PJgWY7xbEyYH5NLLYO6g==
-  dependencies:
-    is-scoped "*"
-
 "@types/lodash.trimend@^4.5.6":
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/@types/lodash.trimend/-/lodash.trimend-4.5.6.tgz#aba6dccde869458e7076f4cee67ee1b22166b7f1"
@@ -2532,7 +2525,7 @@ is-retry-allowed@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
   integrity sha1-EaBgVotnM5REAz0BJaYaINVk+zQ=
 
-is-scoped@*, is-scoped@^2.1.0:
+is-scoped@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-scoped/-/is-scoped-2.1.0.tgz#fef0713772658bdf5bee418608267ddae6d3566d"
   integrity sha512-Cv4OpPTHAK9kHYzkzCrof3VJh7H/PrG2MBUMvvJebaaUMbqhm0YAtXnvh0I3Hnj2tMZWwrRROWLSgfJrKqWmlQ==

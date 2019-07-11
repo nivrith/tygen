@@ -12,7 +12,6 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "@types/inquirer": "^6.0.3",
-    "@types/is-scoped": "^1.0.1",
     "@types/underscore.string": "^0.0.38",
     "case": "^1.6.1",
     "chalk": "^2.4.2",

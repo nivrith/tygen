@@ -1,14 +1,14 @@
 
 interface Name {
-    camel: string,
-    pascal: string,
-    kebab: string
+  camel: string,
+  pascal: string,
+  kebab: string
 
 }
 
 interface Repo {
-    name:string,
-    username: string
+  name: string,
+  username: string
 }
 export interface UserInput {
   name: Name
@@ -22,4 +22,4 @@ export interface UserInput {
   }
 }
 
-export default UserInput;
+export default UserInput

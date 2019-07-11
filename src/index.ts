@@ -1,18 +1,16 @@
 import {Command, flags} from '@oclif/command'
-import chalk from 'chalk';
-import * as figlet from 'figlet';
-import * as walk from 'walk-sync';
-import * as Path from 'path';
-import { readFileSync,  outputFileSync, copySync } from 'fs-extra';
-import {compile} from 'handlebars';
-import * as inquirer from 'inquirer';
-import * as Case from 'case';
-import {UserInput} from './user-input.interface';
-import {prompts} from './prompts';
-import { cwd } from 'process';
-const trimEnd = require('lodash.trimend');
-import * as emoji from 'node-emoji';
-
+import chalk from 'chalk'
+import * as figlet from 'figlet'
+const walk = require('walk-sync')
+import * as Path from 'path'
+import {readFileSync, outputFileSync, copySync} from 'fs-extra'
+import {compile} from 'handlebars'
+import * as inquirer from 'inquirer'
+import * as Case from 'case'
+import {UserInput} from './user-input.interface'
+import {prompts} from './prompts'
+import {cwd} from 'process'
+import * as emoji from 'node-emoji'
 
 class Tygen extends Command {
   static description = 'Generate release ready npm module project'
@@ -28,8 +26,7 @@ class Tygen extends Command {
     // force: flags.boolean({char: 'f'}),
   }
 
-
-  static UserData: UserInput;
+  static UserData: UserInput
 
   static args = [{name: 'name'}]
 
@@ -38,35 +35,29 @@ class Tygen extends Command {
     // do some initializati on
     await this.printAscii()
 
-    await this.getUserInput(args, flags);
+    await this.getUserInput(args, flags)
   }
 
   async run() {
     // start the spinner
-    this.log(emoji.get('drum_with_drumsticks'), chalk.grey(`Preparing couldron...`));
-    this.log(emoji.get('pizza'), chalk.grey(`Adding magic ingredients...`));
+    this.log(emoji.get('drum_with_drumsticks'), chalk.grey('Preparing couldron...'))
+    this.log(emoji.get('pizza'), chalk.grey('Adding magic ingredients...'))
 
-
-
-    const {args, flags} = this.parse(Tygen)
-
-    const name = flags.name || 'world'
-
-    const paths = await this.getTemplatePaths();
+    const paths = await this.getTemplatePaths()
 
     for (let path of paths) {
-      let resolvedPath = Path.resolve(__dirname, 'templates' , path);
-      let outputPath = Path.resolve(cwd(), Tygen.UserData.name.kebab, path);
-      if(this.isHandlebars(path)){
-        let source: string = readFileSync(resolvedPath, 'utf8').toString();
-        source = await this.compile(source);
-        outputFileSync(outputPath.replace(/\.hbs$/, ''), source);
+      let resolvedPath = Path.resolve(__dirname, 'templates' , path)
+      let outputPath = Path.resolve(cwd(), Tygen.UserData.name.kebab, path)
+      if (this.isHandlebars(path)) {
+        let source: string = readFileSync(resolvedPath, 'utf8').toString()
+        source = await this.compile(source)
+        outputFileSync(outputPath.replace(/\.hbs$/, ''), source)
       } else {
-        copySync(resolvedPath, outputPath);
+        copySync(resolvedPath, outputPath)
       }
     }
 
-    this.log(chalk.green(emoji.get('sparkles'),`Poof! ${Tygen.UserData.name.kebab} created!!`));
+    this.log(chalk.green(emoji.get('sparkles'), `Poof! ${Tygen.UserData.name.kebab} created!!`))
 
   }
   async printAscii(): Promise<void> {
@@ -78,19 +69,17 @@ class Tygen extends Command {
   }
 
   async getTemplatePaths() {
-    return walk(Path.resolve(__dirname, './templates'), { directories: false });
+    return walk(Path.resolve(__dirname, './templates'), {directories: false})
   }
 
   async isHandlebars(path: string) {
-    const hbsTest = /\.hbs$/;
-    return path.match(hbsTest);
+    const hbsTest = /\.hbs$/
+    return path.match(hbsTest)
   }
-  async compile (source: string): Promise<string> {
+  async compile(source: string): Promise<string> {
     const template = compile(source)
-    return template(Tygen.UserData);
+    return template(Tygen.UserData)
   }
-
-
 
   async getUserInput(args: any, flags: any) {
     const props: any = await inquirer.prompt(
@@ -110,17 +99,15 @@ class Tygen extends Command {
       },
       author: {
         name:  {
-        camel: Case.camel(props.name),
-        pascal: Case.pascal(props.name),
-        kebab: Case.kebab(props.name)
-      },
+          camel: Case.camel(props.name),
+          pascal: Case.pascal(props.name),
+          kebab: Case.kebab(props.name)
+        },
         email: props.email
       }
-    };
+    }
   }
 
 }
 
 export = Tygen
-
-
