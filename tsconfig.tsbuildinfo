@@ -213,14 +213,6 @@
         "version": "eb42f656f5b4254dece165b817680ec86c87799d141c44a132c1f81fc3bb37e0",
         "signature": "eb42f656f5b4254dece165b817680ec86c87799d141c44a132c1f81fc3bb37e0"
       },
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts": {
-        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
-        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633"
-      },
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/walk-sync/index.d.ts": {
-        "version": "21011b22100f13cef8b976fe818c1ce857bccf5974d879e72fa260af98685db6",
-        "signature": "21011b22100f13cef8b976fe818c1ce857bccf5974d879e72fa260af98685db6"
-      },
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/globals.d.ts": {
         "version": "0d0f3c7f937ec1706827fef6471d337b2e0d6eb31c3091fa74ff51fdf80c4786",
         "signature": "0d0f3c7f937ec1706827fef6471d337b2e0d6eb31c3091fa74ff51fdf80c4786"
@@ -236,6 +228,10 @@
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/buffer.d.ts": {
         "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
         "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/events/index.d.ts": {
+        "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
+        "signature": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935"
       },
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/child_process.d.ts": {
         "version": "13084b2c9d246289892aceb7ecc3fe9666a9cf6d8e59cae17f76649f4e0773e8",
@@ -674,7 +670,7 @@
         "signature": "a81d73fb2837f88ab4671882a5d3fe3113da6a5883c2261fdfb0b87905bba67f"
       },
       "/users/nivrith/documents/files/polyrithm/tygen/src/user-input.interface.ts": {
-        "version": "ab7d2c230f9c4cccea5d34057f63a006e6120a43aadadc57294dff277050a9ba",
+        "version": "4950f6dc615527b092d6c55a939e2d66500472d7c963133b3d8dd13ce7b88fea",
         "signature": "a416967f90c7a9ab69292e2a85aed70eef00a9adefd869ec2fb8f1d7929ae64a"
       },
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/superb/words.json": {
@@ -692,13 +688,53 @@
         "version": "f590581a1fece5a87f348730a828b0e86092f978f25348d321d4e54a04d96c03",
         "signature": "c6de69f80e16a7b957c4519adb13d03e584ed1a9189a4274b37d3b978a907728"
       },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node-emoji/index.d.ts": {
+        "version": "a142bf74a83068d1b29064bb590971a28077068abfa90ec412effad9e5b28ceb",
+        "signature": "a142bf74a83068d1b29064bb590971a28077068abfa90ec412effad9e5b28ceb"
+      },
       "/users/nivrith/documents/files/polyrithm/tygen/src/index.ts": {
-        "version": "a452e97b92bb7483b8b913056a7aca25e75f2cbac1130c8b864d7d05a3759c23",
-        "signature": "cb7e7ce1801b19040e015845efdd20bb989ca572167289575da3092fc2ecd34a"
+        "version": "5ebd9469dbce024564f4db3633b94a16a57ab80f0f0908ae40f34164c62ed73f",
+        "signature": "f744da901f12bab2916c206181005f238b598658b20c4f0cb9582951c850b23c"
       },
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/chai/index.d.ts": {
         "version": "c465afa89ac28f74167a2ee7c3c6eb8dd1245c2b3bdaa4704d58d35b932de4b7",
         "signature": "c465afa89ac28f74167a2ee7c3c6eb8dd1245c2b3bdaa4704d58d35b932de4b7"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts": {
+        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob/index.d.ts": {
+        "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
+        "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob-stream/index.d.ts": {
+        "version": "da1d119657295467fb030e6f6ba17011c5171d5deafd3899f448a145f36179b5",
+        "signature": "da1d119657295467fb030e6f6ba17011c5171d5deafd3899f448a145f36179b5"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl/index.d.ts": {
+        "version": "bc66144400040d98107f1c345a8f809df42f65eb259a2545d703a68c2bcd4d1b",
+        "signature": "bc66144400040d98107f1c345a8f809df42f65eb259a2545d703a68c2bcd4d1b"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl-fs/index.d.ts": {
+        "version": "0ba006a3c3dc26030785c89bc00bdd11542072029cdbc8c835560221c79eb223",
+        "signature": "0ba006a3c3dc26030785c89bc00bdd11542072029cdbc8c835560221c79eb223"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chokidar/types/index.d.ts": {
+        "version": "e780502490d80e1c8aa67358175bde94ab164d44a30801215a919f557bc5430c",
+        "signature": "e780502490d80e1c8aa67358175bde94ab164d44a30801215a919f557bc5430c"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker-registry/index.d.ts": {
+        "version": "c68efdae4df1801f6ec509a8c0fbc2341e93f6632f2fce6ac2b09e4cc5eeeed2",
+        "signature": "c68efdae4df1801f6ec509a8c0fbc2341e93f6632f2fce6ac2b09e4cc5eeeed2"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker/index.d.ts": {
+        "version": "b931954d575fb0f4e94450e151d51a9b6c3851dc7d5d3385db040a4298f9ee1a",
+        "signature": "b931954d575fb0f4e94450e151d51a9b6c3851dc7d5d3385db040a4298f9ee1a"
+      },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/gulp/index.d.ts": {
+        "version": "5e6a8a22741389f36e1d47308bf03289c8e511d52be56fa4943fdaf76cea12c7",
+        "signature": "5e6a8a22741389f36e1d47308bf03289c8e511d52be56fa4943fdaf76cea12c7"
       },
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
         "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
@@ -764,6 +800,10 @@
         "version": "53f4a595b3b84fbd7ce6a47370c9ca7533c12ee4e3e4c754eb904d14d32eaabe",
         "signature": "53f4a595b3b84fbd7ce6a47370c9ca7533c12ee4e3e4c754eb904d14d32eaabe"
       },
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/normalize-package-data/index.d.ts": {
+        "version": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
+        "signature": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613"
+      },
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/sinon/ts3.1/index.d.ts": {
         "version": "9e3da7edaee190a056237f7ec5104b021f3423df51daa00cd255200b0f3ac4d5",
         "signature": "9e3da7edaee190a056237f7ec5104b021f3423df51daa00cd255200b0f3ac4d5"
@@ -787,6 +827,7 @@
       "target": 4,
       "composite": true,
       "resolveJsonModule": true,
+      "esModuleInterop": true,
       "configFilePath": "/Users/nivrith/Documents/files/polyrithm/tygen/tsconfig.json"
     },
     "referencedMap": {
@@ -1042,15 +1083,6 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/walk-sync/index.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/globals.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1064,6 +1096,10 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/buffer.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/events/index.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1810,11 +1846,14 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node-emoji/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/nivrith/documents/files/polyrithm/tygen/src/index.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@oclif/command/lib/index.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chalk/types/index.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/figlet/index.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/walk-sync/index.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/path.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/fs-extra/index.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/handlebars/types/index.d.ts",
@@ -1823,10 +1862,69 @@
         "/users/nivrith/documents/files/polyrithm/tygen/src/user-input.interface.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/src/prompts.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/process.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node-emoji/index.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/chai/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob-stream/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/fs.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl-fs/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob-stream/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chokidar/types/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/fs.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker-registry/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker-registry/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/stream.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/gulp/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl-fs/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chokidar/types/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/fs.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/stream.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -2055,6 +2153,10 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/normalize-package-data/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/sinon/ts3.1/index.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
@@ -2087,22 +2189,6 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.es2018.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.dom.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.scripthost.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -2187,10 +2273,6 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.es2017.full.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -2322,15 +2404,6 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/walk-sync/index.d.ts": [
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
-        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/globals.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
@@ -2344,6 +2417,10 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/buffer.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/events/index.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3071,12 +3148,74 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node-emoji/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/nivrith/documents/files/polyrithm/tygen/src/index.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@oclif/parser/lib/flags.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@oclif/command/lib/index.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/src/user-input.interface.ts"
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/chai/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob-stream/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/fs.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl-fs/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob-stream/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chokidar/types/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/fs.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker-registry/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker-registry/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/stream.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/events.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/gulp/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl-fs/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chokidar/types/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/fs.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/stream.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3305,6 +3444,10 @@
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/normalize-package-data/index.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/sinon/ts3.1/index.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
@@ -3315,6 +3458,26 @@
       ],
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/underscore.string/index.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/underscore/index.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.dom.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.scripthost.d.ts": [
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
+        "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/typescript/lib/lib.es2017.full.d.ts": [
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/util.d.ts",
         "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/ts3.2/util.d.ts"
       ]
@@ -3373,12 +3536,11 @@
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@oclif/command/lib/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chalk/types/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/figlet/index.d.ts",
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts",
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/walk-sync/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/globals.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/assert.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/async_hooks.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/buffer.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/events/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/child_process.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/cluster.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node/console.d.ts",
@@ -3493,7 +3655,18 @@
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/superb/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/src/utils.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/src/prompts.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/node-emoji/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/src/index.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/chai/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/minimatch/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/glob-stream/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/vinyl-fs/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/chokidar/types/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker-registry/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/undertaker/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/gulp/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/lodash/ts3.1/common/array.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
@@ -3510,10 +3683,10 @@
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/lodash.trimend/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/mocha/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/nock/index.d.ts",
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/normalize-package-data/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/sinon/ts3.1/index.d.ts",
       "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/underscore/index.d.ts",
-      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/underscore.string/index.d.ts",
-      "/users/nivrith/documents/files/polyrithm/tygen/src/index.ts"
+      "/users/nivrith/documents/files/polyrithm/tygen/node_modules/@types/underscore.string/index.d.ts"
     ]
   },
   "version": "3.5.3"
