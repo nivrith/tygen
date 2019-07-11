@@ -25,7 +25,6 @@
     "node-emoji": "^1.10.0",
     "superb": "^4.0.0",
     "tslib": "^1",
-    "tygen": "^1.1.1",
     "underscore.string": "^3.3.5",
     "walk-sync": "^2.0.2"
   },

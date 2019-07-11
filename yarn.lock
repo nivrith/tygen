@@ -4908,31 +4908,6 @@ tsutils@^3.0.0, tsutils@^3.5.0:
   dependencies:
     tslib "^1.8.1"
 
-tygen@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/tygen/-/tygen-1.1.1.tgz#a7de7b05947e03f5459b46ba46ebfb80f9ad094a"
-  integrity sha512-gnOyifpRIRBT8fCy4OWhWkS2QgsteizhdNDp++Tt+KqvwsjM0NJHBGbUQgQr5fPWGdAZoDm9gtX24Eiud4W6zQ==
-  dependencies:
-    "@oclif/command" "^1"
-    "@oclif/config" "^1"
-    "@oclif/plugin-help" "^2"
-    "@types/inquirer" "^6.0.3"
-    "@types/underscore.string" "^0.0.38"
-    case "^1.6.1"
-    chalk "^2.4.2"
-    cli-ux "^5.3.0"
-    figlet "^1.2.3"
-    fs-extra "^8.1.0"
-    handlebars "^4.1.2"
-    inquirer "^6.5.0"
-    is-scoped "^2.1.0"
-    lodash.trimend "^4.5.1"
-    node-emoji "^1.10.0"
-    superb "^4.0.0"
-    tslib "^1"
-    underscore.string "^3.3.5"
-    walk-sync "^2.0.2"
-
 type-detect@^4.0.0, type-detect@^4.0.5:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
