@@ -9,11 +9,11 @@
     "target": "es2017",
     "composite": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "tsBuildInfoFile": "lib/tsconfig.tsbuildinfo"
   },
   "exclude": [
-    "node_modules",
-    "lib"
+    "node_modules"
   ],
   "include": [
     "src/**/*"
