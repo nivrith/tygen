@@ -10,10 +10,12 @@
     "composite": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "incremental": true,
     "tsBuildInfoFile": "lib/tsconfig.tsbuildinfo"
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "test"
   ],
   "include": [
     "src/**/*"
