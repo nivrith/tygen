@@ -1,0 +1,76 @@
+{
+  "name": "tygen",
+  "description": "Elegant release ready node module generator with typescript, testing, coverage and benchmarking",
+  "version": "0.0.0",
+  "author": "Nivrith",
+  "bin": {
+    "tygen": "./bin/run"
+  },
+  "bugs": "https://github.com/nivrith/tygen/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "@types/inquirer": "^6.0.3",
+    "@types/is-scoped": "^1.0.1",
+    "@types/underscore.string": "^0.0.38",
+    "case": "^1.6.1",
+    "chalk": "^2.4.2",
+    "cli-ux": "^5.3.0",
+    "figlet": "^1.2.3",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.1.2",
+    "inquirer": "^6.5.0",
+    "is-scoped": "^2.1.0",
+    "lodash.trimend": "^4.5.1",
+    "node-emoji": "^1.10.0",
+    "superb": "^4.0.0",
+    "tslib": "^1",
+    "underscore.string": "^3.3.5",
+    "walk-sync": "^2.0.2"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/chalk": "^2.2.0",
+    "@types/figlet": "^1.2.0",
+    "@types/fs-extra": "^8.0.0",
+    "@types/gulp": "^4.0.6",
+    "@types/handlebars": "^4.1.0",
+    "@types/lodash.trimend": "^4.5.6",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "@types/node-emoji": "^1.8.1",
+    "chai": "^4",
+    "gulp": "^4.0.2",
+    "mocha": "^5",
+    "nyc": "^13",
+    "ts-node": "^7",
+    "tslint": "^5",
+    "typescript": "^3.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/nivrith/tygen",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "tygen"
+  },
+  "repository": "nivrith/tygen",
+  "scripts": {
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
+  },
+  "types": "lib/index.d.ts"
+}
