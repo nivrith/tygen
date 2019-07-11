@@ -1,6 +1,6 @@
 {
   "name": "tygen",
-  "description": "Elegant release ready node module generator with typescript, testing, coverage and benchmarking",
+  "description": "Elegant release ready node module generator with typescript, testing and coverage",
   "version": "0.0.0",
   "author": "Nivrith",
   "bin": {
@@ -45,6 +45,7 @@
     "chai": "^4",
     "gulp": "^4.0.2",
     "mocha": "^5",
+    "np": "^5.0.3",
     "nyc": "^13",
     "ts-node": "^7",
     "tslint": "^5",
@@ -55,11 +56,18 @@
   },
   "files": [
     "/bin",
-    "/lib"
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "yarn.lock"
   ],
   "homepage": "https://github.com/nivrith/tygen",
   "keywords": [
-    "oclif"
+    "generator",
+    "typescript",
+    "node-module",
+    "package-generator",
+    "npm-package"
   ],
   "license": "MIT",
   "main": "lib/index.js",
@@ -68,9 +76,9 @@
   },
   "repository": "nivrith/tygen",
   "scripts": {
-    "posttest": "tslint -p test -t stylish",
     "prepack": "rm -rf lib && tsc -b",
-    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "release": "npx np"
   },
   "types": "lib/index.d.ts"
 }

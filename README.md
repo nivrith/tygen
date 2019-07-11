@@ -9,7 +9,14 @@ Elegant release ready node module generator with typescript, testing, coverage a
 [![License](https://img.shields.io/npm/l/tygen.svg)](https://github.com/nivrith/tygen/blob/master/package.json)
 
 <!-- toc -->
+
 # Usage
+
+```bash
+
+$ tygen awesome-package
+
+```
 <!-- usage -->
-# Commands
+
 <!-- commands -->
