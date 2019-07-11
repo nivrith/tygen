@@ -76,7 +76,7 @@
   },
   "repository": "nivrith/tygen",
   "scripts": {
-    "prepack": "rm -rf lib && tsc -b",
+    "prepack": "rm -rf lib && tsc -b && npx gulp copy:templates",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "release": "npx np"
   },
