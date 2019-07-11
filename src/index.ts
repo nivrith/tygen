@@ -40,7 +40,7 @@ class Tygen extends Command {
 
   async run() {
     // start the spinner
-    this.log(emoji.get('drum_with_drumsticks'), chalk.grey('Preparing couldron...'))
+    this.log(emoji.get('drum_with_drumsticks'), chalk.grey('Preparing cauldron...'))
     this.log(emoji.get('pizza'), chalk.grey('Adding magic ingredients...'))
 
     const paths = await this.getTemplatePaths()
