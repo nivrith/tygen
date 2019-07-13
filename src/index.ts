@@ -7,11 +7,13 @@ import {readFileSync, outputFileSync, copySync} from 'fs-extra'
 import {compile} from 'handlebars'
 import * as inquirer from 'inquirer'
 import * as Case from 'case'
-import {UserInput} from './user-input.interface'
+import {UserData} from './user-data.interface'
 import {prompts} from './prompts'
 import {cwd} from 'process'
 import * as emoji from 'node-emoji'
-
+import {GitConfig} from './git-config.interface'
+const homeDir = require('home-dir')
+import childCommand from 'child-command'
 class Tygen extends Command {
   static description = 'Generate release ready npm module project'
 
@@ -26,7 +28,9 @@ class Tygen extends Command {
     // force: flags.boolean({char: 'f'}),
   }
 
-  static UserData: UserInput
+  static UserData: UserData
+
+  static GitConfig: GitConfig
 
   static args = [{name: 'name'}]
 
@@ -34,8 +38,9 @@ class Tygen extends Command {
     const {args, flags} = this.parse(Tygen)
     // do some initializati on
     await this.printAscii()
+    await this.getGitConfig()
+    await this.getUserInput({args, flags, git: Tygen.GitConfig})
 
-    await this.getUserInput(args, flags)
   }
 
   async run() {
@@ -68,6 +73,27 @@ class Tygen extends Command {
     )
   }
 
+  async getGitConfig() {
+    let gitConfig: GitConfig = {
+      user: {
+        name: undefined,
+        email: undefined
+      }
+    }
+    try {
+      await childCommand('which git')
+      const {stdout: name} = await childCommand('git config --global user.name')
+      gitConfig.user.name = name.toString().trimRight()
+      const {stdout: email} = await childCommand('git config --global user.email')
+      gitConfig.user.email = email.toString().trimRight()
+
+    } catch {
+      return gitConfig
+    }
+    Tygen.GitConfig = gitConfig
+    return gitConfig
+  }
+
   async getTemplatePaths() {
     return walk(Path.resolve(__dirname, './templates'), {directories: false})
   }
@@ -81,13 +107,20 @@ class Tygen extends Command {
     return template(Tygen.UserData)
   }
 
-  async getUserInput(args: any, flags: any) {
+  async persistDefaults() {
+    try {
+      outputFileSync(homeDir('.tygen'), JSON.stringify(Tygen.UserData))
+    } catch {
+    }
+  }
+  async getUserInput(config: {args: any, flags: any, git: any}) {
     const props: any = await inquirer.prompt(
-      prompts(args, flags)
+      prompts(config)
     )
 
     Tygen.UserData = {
       name: {
+        full: Case.title(props.authorName),
         camel: Case.camel(props.name),
         pascal: Case.pascal(props.name),
         kebab: Case.kebab(props.name)
@@ -97,8 +130,15 @@ class Tygen extends Command {
         name: Case.kebab(props.name),
         username: props.githubUsername
       },
+      gitConfig: {
+        user: {
+          name: props.githubUsername,
+          email: props.email
+        }
+      },
       author: {
         name:  {
+          full: Case.title(props.authorName),
           camel: Case.camel(props.name),
           pascal: Case.pascal(props.name),
           kebab: Case.kebab(props.name)
@@ -106,6 +146,10 @@ class Tygen extends Command {
         email: props.email
       }
     }
+  }
+
+  async finally() {
+    await this.persistDefaults()
   }
 
 }
