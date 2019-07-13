@@ -1,35 +1,47 @@
-import * as superb from 'superb';
-import * as utils from './utils';
-const _s = require('underscore.string');
+import * as superb from 'superb'
+import * as utils from './utils'
+import {GitConfig} from './git-config.interface'
+const _s = require('underscore.string')
+import Case from 'case'
+export const prompts = (config: {args: any, flags: any, git: GitConfig}) => {
+  // tslint:disable-next-line: no-unused
+  const {args, flags, git} = config
+  return [
+    {
+      name: 'name',
+      message: 'What do you want to name your module?',
+      default: _s.slugify(args.name || 'awesome-package'),
+      filter: (x: string) => utils.slugifyPackageName(x)
+    },
+    {
+      name: 'description',
+      message: 'What is your module description?',
+      default: `My ${superb.random()} module`
+    },
+    {
+      name: 'authorName',
+      message: 'What is your name?',
+      default: git.user.name || 'Spiderman',
+      validate: (x: string) => x.length > 0 ? true : 'You have to provide your name'
+    },
+    {
+      name: 'githubUsername',
+      message: 'What is your GitHub username?',
+      store: true,
+      default: Case.kebab(git.user.name || 'spiderman'),
+      validate: (x: string) => x.length > 0 ? true : 'You have to provide a username'
+    },
+    {
+      name: 'email',
+      message: 'What is your email',
+      store: true,
+      default: git.user.email,
+      validate: (x: string) => validateEmail(x) ? true : 'You have to provide a valid email'
+    }
+  ]
 
-
-export const prompts = (args:any, flags:any) => [
-  {
-    name: 'name',
-    message: 'What do you want to name your module?',
-    default: _s.slugify(args.name || 'awesome-package'),
-    filter: (x:string) => utils.slugifyPackageName(x)
-  },
-  {
-    name: 'description',
-    message: 'What is your module description?',
-    default: `My ${superb.random()} module`
-  },
-  {
-    name: 'githubUsername',
-    message: 'What is your GitHub username?',
-    store: true,
-    validate: (x:string) => x.length > 0 ? true : 'You have to provide a username'
-  },
-  {
-    name: 'email',
-    message: 'What is your email',
-    store: true,
-    validate: (x:string) => validateEmail(x) ? true : 'You have to provide a valid email'
-  }
-]
-
+}
 function validateEmail(email: string) {
-  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+  let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(String(email).toLowerCase())
 }

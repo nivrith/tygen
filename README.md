@@ -22,7 +22,8 @@ $ tygen awesome-package # generates new package in folder awesome-package
   \__|  \__, |  \__, |  \___| |_| |_|
         |___/   |___/
 ? What do you want to name your module? awesome-package
-? What is your module description? My remarkable module
+? What is your module description? My gnarly module
+? What is your name? Nivrith
 ? What is your GitHub username? nivrith
 ? What is your email nivrithgomatam@gmail.com
 🥁 Preparing cauldron...
