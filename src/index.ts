@@ -100,7 +100,7 @@ class Tygen extends Command {
 
   async isHandlebars(path: string) {
     const hbsTest = /\.hbs$/
-    return path.match(hbsTest)
+    return hbsTest.test(path)
   }
   async compile(source: string): Promise<string> {
     const template = compile(source)
@@ -139,9 +139,9 @@ class Tygen extends Command {
       author: {
         name:  {
           full: Case.title(props.authorName),
-          camel: Case.camel(props.name),
-          pascal: Case.pascal(props.name),
-          kebab: Case.kebab(props.name)
+          camel: Case.camel(props.authorName),
+          pascal: Case.pascal(props.authorName),
+          kebab: Case.kebab(props.authorName)
         },
         email: props.email
       }
