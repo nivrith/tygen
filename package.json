@@ -44,6 +44,7 @@
     "@types/node": "^10",
     "@types/node-emoji": "^1.8.1",
     "@types/through": "^0.0.29",
+    "auto-changelog": "^1.14.1",
     "chai": "^4",
     "gulp": "^4.0.2",
     "mocha": "^5",
@@ -81,7 +82,8 @@
     "prepack": "rm -rf lib && tsc -b && npx gulp copy:templates",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "release": "npx np",
-    "tygen": "bin/run"
+    "tygen": "bin/run",
+    "version": "npx auto-changelog -p && git add CHANGELOG.md"
   },
   "types": "lib/index.d.ts"
 }
