@@ -49,10 +49,10 @@ class Tygen extends Command {
     this.log(emoji.get('pizza'), chalk.grey('Adding magic ingredients...'))
 
     const paths = await this.getTemplatePaths()
-
+    let outputDir = Path.resolve(cwd(), Tygen.UserData.name.kebab)
     for (let path of paths) {
       let resolvedPath = Path.resolve(__dirname, 'templates' , path)
-      let outputPath = Path.resolve(cwd(), Tygen.UserData.name.kebab, path)
+      let outputPath = Path.resolve(outputDir, path)
       if (this.isHandlebars(path)) {
         let source: string = readFileSync(resolvedPath, 'utf8').toString()
         source = await this.compile(source)
@@ -61,8 +61,10 @@ class Tygen extends Command {
         copySync(resolvedPath, outputPath)
       }
     }
-
-    this.log(chalk.green(emoji.get('sparkles'), `Poof! ${Tygen.UserData.name.kebab} created!!`))
+    this.log(chalk.green(emoji.get('star'), 'Initializing git repository...'))
+    await this.gitInit(outputDir)
+    await this.gitAddRemote(outputDir)
+    this.log(chalk.grey(emoji.get('sparkles'), `Poof! ${Tygen.UserData.name.kebab} created!!`))
 
   }
   async printAscii(): Promise<void> {
@@ -145,6 +147,25 @@ class Tygen extends Command {
         },
         email: props.email
       }
+    }
+  }
+
+  async gitInit(path: string) {
+    try {
+      const command = `cd ${path} && git init && git add .`
+      await childCommand(command)
+    } catch {
+    }
+  }
+
+  async gitAddRemote(path: string) {
+    try {
+      const username = Tygen.UserData.repo.username
+      const reponame = Tygen.UserData.repo.name
+      const remote = `https://github.com/${username}/${reponame}`
+      const command = `cd ${path} && git remote add origin ${remote}`
+      await childCommand(command)
+    } catch {
     }
   }
 
