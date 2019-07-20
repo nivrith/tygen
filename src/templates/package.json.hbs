@@ -24,17 +24,6 @@
     "benchmark": "tsc -b && node",
     "version": "npx auto-changelog -p && git add CHANGELOG.md"
   },
-  "nyc": {
-    "extends": "@istanbuljs/nyc-config-typescript",
-    "all": true,
-    "lines": 80,
-    "exclude": [
-      "test",
-      "docs",
-      "dist"
-    ],
-    "check-coverage": true
-  },
   "files": [
     "dist/**/*"
   ],
