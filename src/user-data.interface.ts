@@ -17,6 +17,7 @@ export interface UserData {
 
   description: string,
   repo: Repo,
+  webpack: boolean,
 
   gitConfig: GitConfig,
 
