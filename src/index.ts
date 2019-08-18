@@ -14,6 +14,8 @@ import * as emoji from 'node-emoji'
 import {GitConfig} from './git-config.interface'
 const homeDir = require('home-dir')
 import childCommand from 'child-command'
+import {spawn} from 'child_process'
+import {devDeps, webpackDeps} from './dependencies'
 class Tygen extends Command {
   static description = 'Generate release ready npm module project'
 
@@ -32,6 +34,7 @@ class Tygen extends Command {
 
   static GitConfig: GitConfig
 
+  static DevDependencies: string[]
   static args = [{name: 'name'}]
 
   async init() {
@@ -51,6 +54,9 @@ class Tygen extends Command {
     const paths = await this.getTemplatePaths()
     let outputDir = Path.resolve(cwd(), Tygen.UserData.name.kebab)
     for (let path of paths) {
+      if (!Tygen.UserData.webpack && (path.indexOf('webpack.js') > 0 || path.indexOf('index.html'))) {
+        continue
+      }
       let resolvedPath = Path.resolve(__dirname, 'templates' , path)
       let outputPath = Path.resolve(outputDir, path)
       if (this.isHandlebars(path)) {
@@ -62,6 +68,7 @@ class Tygen extends Command {
       }
     }
     this.log(chalk.green(emoji.get('star'), 'Initializing git repository...'))
+    await this.installDependencies(outputDir)
     await this.gitInit(outputDir)
     await this.gitAddRemote(outputDir)
     this.log(chalk.grey(emoji.get('sparkles'), `Poof! ${Tygen.UserData.name.kebab} created!!`))
@@ -132,6 +139,7 @@ class Tygen extends Command {
         name: Case.kebab(props.name),
         username: props.githubUsername
       },
+      webpack: props.webpack,
       gitConfig: {
         user: {
           name: props.githubUsername,
@@ -148,12 +156,24 @@ class Tygen extends Command {
         email: props.email
       }
     }
+    if (props.webpack) {
+      Tygen.DevDependencies = [...devDeps, ...webpackDeps]
+    } else {
+      Tygen.DevDependencies = [...devDeps]
+    }
   }
 
   async gitInit(path: string) {
     try {
       const command = `cd ${path} && git init && git add .`
       await childCommand(command)
+    } catch {
+    }
+  }
+
+  async installDependencies(path: string) {
+    try {
+      spawn('yarn', ['add', '--dev', ...Tygen.DevDependencies], {cwd: path, stdio: 'inherit'})
     } catch {
     }
   }
